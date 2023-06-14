@@ -8,7 +8,7 @@ import { motion } from "framer-motion"
 const Home = () => {
   const [ open, setOpen ] = useState( false )
     
- 
+
   const heroAnimate = {
     offScreen:{x:-100},
     onScreen: {
@@ -75,7 +75,7 @@ const Home = () => {
   
   return (
 
-    <div>
+    <div id='navigation'>
        
       {/* ***************************************************HERO****************************************************** */ }
       <div className='bg-secondary-100 '>

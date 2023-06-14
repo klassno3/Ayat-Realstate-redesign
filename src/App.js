@@ -78,7 +78,7 @@ function App () {
 ]);
   return (
      
-    <div className="" >
+    <div className="overflow-x-hidden" >
        <RouterProvider router={router} />
       
       </div> 

@@ -18,7 +18,20 @@ const Navbar = () => {
   useEffect( () => {
     window.addEventListener( "scroll", isActive )
   }, [] )
+  useEffect( () => {
+    window.addEventListener( "click", handleOutSideClick )
+  }, [] )
+  const handleOutSideClick = ( event ) => {
+    
+    
+
    
+    if (! event.target.closest( '#nav' ) ) {
+      setOpen(false)
+    } 
+    
+  }
+
   useEffect( () => {
     window.scrollTo(0, 0);
   }, [location]);
@@ -50,16 +63,18 @@ const Navbar = () => {
   
   const handleOpen = () => {
     setOpen( !open )
-    console.log( "true" )
+    
   }
   const scrollToPortfolio = () => {
    
     setSelectedTab( 'portfolio' )
-    console.log("lover")
+ 
       window.scrollTo( { top: 1500, behavior: 'smooth' } );
   }
+ 
+
   return (
-    <div className={ `w-screen ${active ? "bg-tertiary-100  text-secondary-100 z-50 shadow-xl font-lato fixed top-0 left-0  py-4" :
+    <div id='nav' className={ `w-screen ${active ? "bg-tertiary-100  text-secondary-100 z-50 shadow-xl font-lato fixed top-0 left-0  py-4" :
       "font-lato bg-secondary-100 text-tertiary-100 z-50 fixed top-0 left-0  py-4" }`}>
       <div className="px-3  mx-auto font-lato text-lg tracking-widest md:w-11/12" >
         
@@ -88,7 +103,7 @@ const Navbar = () => {
             </div>
             <div className="">
               
-              <div className={ ` absolute  transition-all duration-200  ${ open ? "absolute  top-0 right-0 z-20 h-screen px-28 py-32 bg-secondary-100/95 flex gap-8 flex-col  text-tertiary-100" : " px-28 py-32 -right-[1000px]  h-screen" }` }
+              <div className={ ` absolute  transition-all duration-200  ${ open ? "absolute  top-0 right-0 z-20 h-screen px-20 py-32 bg-secondary-100/95 flex gap-8 flex-col  text-tertiary-100" : " px-28 py-32 -right-[1000px]  h-screen" }` }
                
               >
 

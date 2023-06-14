@@ -105,9 +105,9 @@ const New = () => {
             </motion.div>
             
           <div className='w-full  text-tertiary-100 lg:w-1/2'>
-              <motion.h1 className='text-3xl capitalize'
+              <motion.h1 className='text-3xl  text-tertiary-100  capitalize'
               variants={leftCardAnimate}
-              > New Credit For Those Purchasing In Birr</motion.h1>
+              > New Credit For Those Purchasing In Birr </motion.h1>
               <motion.p className='text-md mt-3 w-3/4'
               variants={leftCardAnimate}
               >
@@ -190,7 +190,7 @@ const New = () => {
             </motion.div>
             
           <div className='w-full text-tertiary-100 lg:w-1/2'>
-            <motion.h1 className='text-3xl capitalize'
+            <motion.h1 className='text-3xl capitalize text-tertiary-100 '
             variants={leftCardAnimate}
             >  Kazanchis Mall Sold Out</motion.h1>
             <motion.p className='text-md mt-3 w-3/4'

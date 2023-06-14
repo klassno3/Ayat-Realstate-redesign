@@ -130,7 +130,7 @@ const Footer = () => {
             <FaYoutube  className="text-tertiary-100 hover:text-primary-200" size={25}/>
             </a>
           </div>
-          <p className='justify-center mb-4 text-center hidden text-tertiary-100 md:flex'>
+          <p className='justify-center mb-4 text-center text-tertiary-100 md:flex'>
             © Ayat Real Estate 2020. All rights reserved.
           </p>
           </div>
