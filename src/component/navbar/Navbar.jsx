@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link as ScrollLink } from 'react-scroll';
 import { Link as RouterLink ,useLocation } from 'react-router-dom';
-import LogoGreen from "../../images/Logo-green.svg"
+import LogoGreen from "../../images/Logo-blue.svg"
 import LogoWhite from "../../images/Logo-white.svg"
 import {FaBars, FaRegWindowClose} from "react-icons/fa"
 
