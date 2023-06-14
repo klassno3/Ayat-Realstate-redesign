@@ -27,7 +27,7 @@ const AyatHill = () => {
       opacity: 1,
      transition :{ 
               type: "spring",
-       bounce: .5,
+    
               duration:2,
             } }
   }

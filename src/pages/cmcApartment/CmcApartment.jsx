@@ -21,7 +21,7 @@ import { motion} from "framer-motion"
       opacity: 1,
      transition :{ 
               type: "spring",
-       bounce: .5,
+       
               duration:2,
             } }
   }

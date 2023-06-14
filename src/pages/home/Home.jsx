@@ -5,23 +5,16 @@ import Background from "../../images/Background (2).png"
 import { Link } from 'react-router-dom';
 import { motion } from "framer-motion"
 
-
-
-
-
 const Home = () => {
   const [ open, setOpen ] = useState( false )
     
  
-
-
   const heroAnimate = {
     offScreen:{x:-100},
     onScreen: {
       x:0,
      transition :{ 
               type: "spring",
-       bounce: .5,
               duration:2,
             } }
   }
@@ -33,7 +26,7 @@ const Home = () => {
       opacity: 1,
      transition :{ 
               type: "spring",
-       bounce: .5,
+       
               duration:2,
             } }
   }
@@ -47,7 +40,7 @@ const Home = () => {
       opacity: 1,
      transition :{ 
               type: "spring",
-       bounce: .5,
+       
               duration:2,
             } }
   }
@@ -61,7 +54,7 @@ const Home = () => {
       opacity: 1,
      transition :{ 
               type: "spring",
-       bounce: .5,
+       
               duration:2,
             } }
   }
@@ -75,7 +68,7 @@ const Home = () => {
       opacity: 1,
      transition :{ 
               type: "spring",
-       bounce: .5,
+       
               duration:2,
             } }
   }
@@ -129,7 +122,7 @@ const Home = () => {
       
 
         
-      <motion.div className=' bg-tertiary-100 py-20 font-lato'
+      <motion.div className=' bg-tertiary-100 py-20 '
         transition={ { staggerChildren: 0.1 } }
         initial={ "offScreen" }
         whileInView={ "onScreen" }
@@ -145,7 +138,7 @@ const Home = () => {
           <motion.h1 className="text-4xl mb-5 flex  mx-auto justify-center font-cinzel "
           variants={aboutAnimate}
           >About Us</motion.h1>
-          <motion.p className='  text-center  w-11/12 mx-auto flex justify-center text-secondary-100 font-lato'
+          <motion.p className='text-center  w-11/12 mx-auto flex justify-center text-secondary-100 font-lato'
             variants={ aboutAnimate }
           >Ayat® enjoys the distinction of being a trailblazer in the real estate industry, especially focusing on the construction of residential houses. With a groundbreaking and highly effective mix of Real Estate Development, Real Estate Construction, and Real Estate Finance, Ayat® is miles ahead of the competition. Given the risks taken during the pioneering years, in the virtually unknown market of realty and the rough and tumble of the followed twenty plus years, no wonder Ayat® is proud not only for being the torchbearer of the real estate industry but also for the solid experience it has in its pack.</motion.p>
           { open && ( <div className="text-center w-11/12 mx-auto  text-secondary-100"

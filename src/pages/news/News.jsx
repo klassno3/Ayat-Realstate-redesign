@@ -9,7 +9,6 @@ import { motion} from "framer-motion"
 
 
 const New = () => {
-  // const [openOffice,SetOpenOffice] = useState(false)
   const [openMall,SetOpenMall] = useState(false)
   const [openNew,SetOpenNew] = useState(false)
   const [openUpcomming,SetOpenUpcomming] = useState(false)
@@ -24,7 +23,7 @@ const New = () => {
       opacity: 1,
      transition :{ 
               type: "spring",
-       bounce: .5,
+    
               duration:2,
             } }
   }
@@ -38,7 +37,7 @@ const New = () => {
       opacity: 1,
      transition :{ 
               type: "spring",
-       bounce: .5,
+    
               duration:2,
             } }
   }
