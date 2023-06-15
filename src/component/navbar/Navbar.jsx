@@ -22,10 +22,6 @@ const Navbar = () => {
     window.addEventListener( "click", handleOutSideClick )
   }, [] )
   const handleOutSideClick = ( event ) => {
-    
-    
-
-   
     if (! event.target.closest( '#nav' ) ) {
       setOpen(false)
     } 

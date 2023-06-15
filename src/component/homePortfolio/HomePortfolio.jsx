@@ -1,4 +1,4 @@
-import React, { useState }from 'react'
+import React, { useState,useEffect }from 'react'
 import { FaSearch} from "react-icons/fa"
 import { BsChevronDown } from "react-icons/bs"
 import {cards} from "../../data"
@@ -14,13 +14,36 @@ const HomePortfolio = () => {
   const [ isType, setIsType ] = useState( "type" )
   
 
+  
+  useEffect( () => {
+    window.addEventListener( "click", handleOutSideClick )
+  }, [] )
+
+
+  const handleOutSideClick = ( event ) => {
+
+    if (! event.target.closest( '#status' ) ) {
+     setIsPressedStatus(false)
+    } 
+    if (! event.target.closest( '#location' ) ) {
+     setIsPressedLocation(false)
+    } 
+  
+    if (! event.target.closest( '#type' ) ) {
+     setIsPressedType(false)
+    } 
+  
+  
+    
+  }
+
 
   return (
     <div id="portfolio" className='bg-tertiary-100  py-24 '>
       <h1 className='text-4xl justify-center mx-auto flex font-cinzel'>Our Portfolio</h1>
       <div className='bg-white mx-4  justify-between items-center  h-24 mt-14  shadow-lg rounded-full px-10 hidden md:flex lg:w-11/12 lg:mx-auto ' >
         {/* ***************************************************status****************************************************** */ }
-          <div className='bg-secondary-100 relative  text-xl  w-36 h-14 rounded-full flex justify-center items-center text-tertiary-100 gap-4 lg:w-52 lg:gap-10'>
+          <div id='status' className='bg-secondary-100 relative  text-xl  w-36 h-14 rounded-full flex justify-center items-center text-tertiary-100 gap-4 lg:w-52 lg:gap-10'>
           <p className='z-20'>{ isStatus === "status" ? "Status" : "For Sale" }</p>
           <BsChevronDown size={ 20 } className='z-20 hover:text-primary-100' onClick={ () => { setIsPressedStatus( !isPressedStatus ) } } />  
             { isPressedStatus &&
@@ -30,7 +53,7 @@ const HomePortfolio = () => {
             </div> ) }
         </div>
           {/* ***************************************************location****************************************************** */}
-        <div className='bg-secondary-100 relative  text-xl  w-44 h-14 rounded-full flex justify-center items-center text-tertiary-100 gap-4 lg:w-52 lg:gap-10'>
+        <div id="location" className='bg-secondary-100 relative  text-xl  w-44 h-14 rounded-full flex justify-center items-center text-tertiary-100 gap-4 lg:w-52 lg:gap-10'>
           <p className='z-20'>{ isLocation === "location" ? "Location" : isLocation === "ayat" ? "Ayat" : "CCE-CMC" }</p>
           <BsChevronDown size={ 20 } className='z-20 hover:text-primary-100' onClick={ () => { setIsPressedLocation( !isPressedLocation ) } } />
             { isPressedLocation &&
@@ -65,7 +88,7 @@ const HomePortfolio = () => {
           </div>
           {/* ***************************************************types****************************************************** */}
           
-          <div className='bg-secondary-100 relative  text-xl  w-56 h-14 rounded-full flex justify-center items-center text-tertiary-100 gap-4 lg:w-64 lg:gap-10'>
+          <div id="type" className='bg-secondary-100 relative  text-xl  w-56 h-14 rounded-full flex justify-center items-center text-tertiary-100 gap-4 lg:w-64 lg:gap-10'>
               <p className='z-20'>{ isType === "type" ? "Property Types" : isType === "resindential" ? "Resindential" : "Commertial"}</p>
             <BsChevronDown size={ 20 } className='z-20 hover:text-primary-100' onClick={()=>{setIsPressedType(!isPressedType)}}/>
             { isPressedType &&
