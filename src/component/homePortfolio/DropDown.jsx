@@ -9,11 +9,11 @@ const DropDown = ( { options,title,selection,onSelect } ) => {
   useEffect(() => {
     const handler = ( event ) => {
       
-      if ( !divEl.current.contains(event.target)) {
-        console.log( divEl.current )
-        setIsOpen(false)
+      // if ( !divEl.current.contains(event.target)) {
+      
+      //   setIsOpen(false)
         
-      }
+      // }
     };
 
     document.addEventListener('click', handler, true);
@@ -45,7 +45,7 @@ const DropDown = ( { options,title,selection,onSelect } ) => {
      {/* if selection is null it will print title if it not null it will print selection.label */}
       <div className='bg-secondary-100 relative  text-xl   h-14 rounded-full flex justify-between px-5 py-2  items-center text-tertiary-100 gap-4 xl:w-64 lg:gap-10' onClick={ handleClick }>{ selection?.lable || title } <GoChevronDown />
       
-      { isOpen && <div className=" absolute text-secondary-100 opacity-1/2 bg-white  w-full h-32 rounded-md  top-full px-5 py-10 left-0">{ renderedOptions }</div> }
+      { isOpen && <div className=" shadow-xl absolute text-secondary-100 opacity-1/2 bg-white  w-full h-32 rounded-md  top-full px-5 py-10 left-0">{ renderedOptions }</div> }
       </div>
     </div>
   

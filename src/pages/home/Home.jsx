@@ -80,8 +80,8 @@ const Home = () => {
       {/* ***************************************************HERO****************************************************** */ }
       <div className='bg-secondary-100 '>
 
-      <div className='relative px-3 pt-36 pb-20 lg:w-11/12 lg:mx-auto  md:pt-48 lg:pt-56 lg:pb-28'>
-          <motion.div className='flex justify-center '
+      <div className='relative px-3 pt-36 pb-20 lg:w-11/12 lg:mx-auto  md:pt-48  lg:pt-56 lg:pb-32'>
+          <motion.div className='flex   '
             transition={ {staggerChildren:0.1} }
             initial={"offScreen"}
             animate={"onScreen" }
@@ -101,8 +101,8 @@ const Home = () => {
                
                 variants={ heroAnimate }
               >
-            <Link to="/register" className="bg-tertiary-100 border-2 border-tertiary-100  flex justify-center text-secondary-100 px-5 py-3 tracking-widest font-semibold focus:outline-none rounded-md xl:px-14 hover:bg-primary-100 hover:border-primary-100 duration-200 hover:scale-[1.03]">REGISTER NOW</Link>
-            <Link to="/priceinfo"className='border-2 border-tertiary-100  flex justify-center text-tertiary-100 px-5 py-3 tracking-widest font-semibold focus:outline-none rounded-md xl:px-14 hover:bg-primary-100 hover:border-primary-100 duration-200 hover:scale-[1.03]'>SHARE FORM</Link>
+            <Link to="/register" className="border-2   flex justify-center text-secondary-100 px-5 py-3 tracking-widest font-semibold focus:outline-none rounded-md xl:px-14 bg-primary-100 border-primary-100 duration-200 hover:scale-[1.03]">REGISTER NOW</Link>
+            <Link to="/priceinfo"className='border-2   flex justify-center text-tertiary-100 px-5 py-3 tracking-widest font-semibold focus:outline-none rounded-md xl:px-14 hover:bg-primary-100 border-primary-100 duration-200 hover:scale-[1.03]'>SHARE FORM</Link>
      
       </motion.div>
       </div>

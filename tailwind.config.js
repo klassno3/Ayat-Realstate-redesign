@@ -36,8 +36,8 @@ module.exports = {
       },
       
       fontFamily: {
-        "cinzel": [ "Cinzel", "serif" ] ,
-        "lato": [ "Lato", "serif" ] 
+        "cinzel": [ "inter", "sans-serif" ] ,
+        "lato": [ "inter", "sans-serif" ] 
         
       },
       

@@ -4,7 +4,7 @@ export const cards = [
     title: "AYAT HILL BOTTOM APARTMENTS AND BUSINESS OUTLETS",
     description: "Located at Ayat settlement, at Ayat county, which, not incidentally, lent its name to a far wider place in the area than actually develop...",
     Link: "/portfolio/ayat-hill",
-    imageLink: "https://ayatrealestate.com/wp-content/uploads/2019/06/ayat-shoping-mall.jpg",
+    imageLink: "https://plus.unsplash.com/premium_photo-1678963247800-f1299e0dce04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=712&q=80",
     animation: "leftCardAnimate",
     
     
@@ -25,7 +25,7 @@ export const cards = [
     title: "CMC APARTMENT",
     description: "These apartments located in CCE-CMC are spacious residential units that reflects the magical merging of inspiration and architecture. The...",
     Link: "/portfolio/cmc-apartment",
-    imageLink: "https://ayatrealestate.com/wp-content/uploads/2019/03/cce-res-1-1.jpg",
+    imageLink: "https://images.unsplash.com/photo-1481253127861-534498168948?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1073&q=80",
     animationImg: "leftCardAnimate",
   
   

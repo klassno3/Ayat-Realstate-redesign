@@ -91,7 +91,7 @@ const CmcApartment = () => {
                   </clipPath>
                 </defs>
               <image width="100%" height="100%" preserveAspectRatio="xMinYMin slice"
-                xlinkHref="https://ayatrealestate.com/wp-content/uploads/2019/03/cce-res-1-1.jpg" clip-path="url(#user-space)" />
+                xlinkHref="https://images.unsplash.com/photo-1481253127861-534498168948?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1073&q=80" clip-path="url(#user-space)" />
 </svg>
          
           </div>

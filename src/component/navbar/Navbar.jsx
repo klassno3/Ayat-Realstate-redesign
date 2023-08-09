@@ -70,8 +70,8 @@ const Navbar = () => {
  
 
   return (
-    <div id='nav' className={ `w-screen ${active ? "bg-tertiary-100  text-secondary-100 z-50 shadow-xl font-lato fixed top-0 left-0  py-4" :
-      "font-lato bg-secondary-100 text-tertiary-100 z-50 fixed top-0 left-0  py-4" }`}>
+    <div id='nav' className={ `py-5 w-screen ${active ? "bg-tertiary-100  text-secondary-100 z-50 shadow-xl font-lato fixed top-0 left-0  " :
+      "font-lato bg-secondary-100 text-tertiary-100 z-50 fixed top-0 left-0  " }`}>
       <div className="px-3  mx-auto font-lato text-lg tracking-widest md:w-11/12" >
         
       
@@ -142,8 +142,9 @@ const Navbar = () => {
                 </RouterLink>
            
               </div>
-              <div className="hidden md:flex xl:gap-14 lg:gap-10 md:gap-5">
+              <div className="hidden md:flex md:items-center xl:gap-14 lg:gap-10 md:gap-5">
    
+                
 
                 <RouterLink to="/" onClick={ () => setSelectedTab( 'Home' ) } className={ `group ${ selectedTab === 'home' ? 'font-semibold' : ''
                   }` }>
